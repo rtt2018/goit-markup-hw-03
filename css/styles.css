@@ -7,6 +7,8 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 a {
@@ -18,7 +20,47 @@ button {
   font-family: inherit;
   cursor: pointer;
 }
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1128px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /*-------------------HEADER---------------------*/
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -27,22 +69,36 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: #4d5ae5;
 }
 
 .logo-web {
-  color: #4d5ae5;
+  padding: 24px 0;
+  margin-right: 76px;
 }
 
 .logo-studio {
   color: #2e2f42;
 }
 
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 40px;
+}
+
 .menu-list-link {
+  display: block;
   color: #2e2f42;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
 .menu-list-link:hover,
@@ -52,15 +108,19 @@ button {
 
 .address-container {
   font-style: normal;
+  margin-left: auto;
 }
 
 .address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .address-list-item {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: inherit;
+  padding: 24px 0;
 }
 
 .address-list-item:hover,
@@ -106,9 +166,6 @@ button {
 /*---------------------BENEFIT-SECTION--------------------------*/
 
 .benefits-section {
-}
-
-.benefits-hidden-href {
 }
 
 .benefits-list {
