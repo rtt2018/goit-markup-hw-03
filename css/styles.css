@@ -151,7 +151,7 @@ img {
   letter-spacing: 0.02em;
   color: #ffffff;
   text-align: center;
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto 48px;
 }
 
@@ -182,6 +182,7 @@ img {
   border: 0;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
+  min-width: 169px;
 }
 
 /*---------------------BENEFIT-SECTION--------------------------*/
@@ -287,7 +288,7 @@ img {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
-  padding: 32px 16px;
+  padding: 32px 0;
   margin: 0;
 }
 
